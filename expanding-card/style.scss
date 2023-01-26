@@ -18,26 +18,31 @@ body {
   height: 100vh;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .image-wrapper {
   height: 100%;
-  width: 100px;
   border-radius: 3rem;
   display: flex;
   flex-direction: column-reverse;
+  flex: 0.5;
   padding-bottom: 2rem;
   padding-left: 2rem;
   cursor: pointer;
-  &.active{
-    .image-wrapper__title{
-        opacity: 1;
+  transition: flex 0.5s ease;
+  background-position: center;
+  background-size: cover;
+  &.active {
+    .image-wrapper__title {
+      opacity: 1;
     }
-    width: 50vw;
+    flex: 4;
   }
-  &__title{
+  &__title {
     color: $white;
     opacity: 0;
     font-size: 1.5rem;
+    transition: opacity 0.5s ease;
   }
 }
