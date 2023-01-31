@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+// variables
+$line-border-empty: #f1f1f1;
+$line-border-fill: tomato;
+$white: #fff;
+$disabled-text: #00000059;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
